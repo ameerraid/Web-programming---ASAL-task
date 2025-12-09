@@ -199,7 +199,9 @@
     <div class="banner">
     <img src="image/banner.jpg" class="banner-img" alt="">
     <a href="#" class="banner_btn">Learn More</a>
-</div><!-- ============ BLOG ============ -->
+      
+</div> <!-- ============ END OF DIGITAL BOOK BANNER ============ -->
+<!-- ============ BLOG ============ -->
     <section class="blog container" id="blog">
         <h2 class="section-title">Our Blog</h2>
 
@@ -250,5 +252,14 @@
             </article>
         </div>
     </section>
-    <!-- ============ END OF DIGITAL BOOK BANNER ============ -->
+   
 
+<!-- ============ DARK MODE SCRIPT ============ -->
+    <script>
+        const toggleBtn = document.querySelector(".dark-toggle");
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
