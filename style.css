@@ -1,1 +1,49 @@
+/* ============ GLOBAL ============ */
+:root {
+    --primary: #00c8d2;
+    --dark-text: #111111;
+    --light-text: #666666;
+    --card-border: #dddddd;
+    --bg-light: #f8f8f8;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
