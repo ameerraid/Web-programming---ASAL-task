@@ -314,3 +314,61 @@ position: absolute;
 .footer-copy span {
     color: var(--primary);
 }
+/* ============ RESPONSIVE ============ */
+/* ============================================
+   RESPONSIVE MASTER FIX
+   Works for iPhone XR – iPad Pro – Nest Hub Max
+   ============================================ */
+
+/* ---------- Nest Hub Max (1280px) ---------- */
+@media (max-width: 1280px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .banner {
+        height: 330px;
+    }
+
+    .banner-img {
+        object-position: 30% center;
+    }
+
+    .arrival-grid,
+    .review-grid,
+    .features,
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ============ RESPONSIVE ============ */
+/* ============================================
+   RESPONSIVE MASTER FIX
+   Works for iPhone XR – iPad Pro – Nest Hub Max
+   ============================================ */
+
+/* ---------- Nest Hub Max (1280px) ---------- */
+@media (max-width: 1280px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .banner {
+        height: 330px;
+    }
+
+    .banner-img {
+        object-position: 30% center;
+    }
+
+    .arrival-grid,
+    .review-grid,
+    .features,
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
