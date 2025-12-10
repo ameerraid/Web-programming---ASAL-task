@@ -1,1 +1,731 @@
+/* ============ GLOBAL ============ */
+:root {
+    --primary: #00c8d2;
+    --dark-text: #111111;
+    --light-text: #666666;
+    --card-border: #dddddd;
+    --bg-light: #f8f8f8;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+/* ============ HERO ============ */
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem 0 2rem;
+}
+
+.hero-small {
+    letter-spacing: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0.7rem 0;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-desc {
+    max-width: 32rem;
+    color: var(--light-text);
+    margin-bottom: 1.3rem;
+}
+
+.hero-image img {
+    width: 26rem;
+    margin-left: auto;
+}
+/* ============ FEATURES ============ */
+
+.features {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 0.07rem solid var(--card-border);
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.03);
+}
+
+.feature-box i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.feature-box h3 {
+    margin-bottom: 0.3rem;
+}
+/* ============ FEATURED BOOKS ============ */
+
+.featured {
+    padding: 3rem 0 1rem;
+}
+
+.featured-scroll {
+    display: flex;
+    gap: 1.2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+}
+
+.featured-scroll::-webkit-scrollbar {
+    height: 0.6rem;
+}
+
+.featured-scroll::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+}
+
+.featured-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 2rem;
+}
+
+.book-card {
+    min-width: 13rem;
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+    border: 0.07rem solid var(--card-border);
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.55rem rgba(0, 0, 0, 0.04);
+}
+
+.book-card img {
+    border-radius: 0.3rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-bottom: 0.7rem;
+}
+
+.book-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+.book-genre {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin: 0.3rem 0 0.7rem;
+}
+/* ============ NEW ARRIVALS ============ */
+
+.arrivals {
+    padding: 3rem 0 1rem;
+}
+
+.arrival-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.3rem;
+}
+
+.arrival-card {
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+    border: 0.07rem solid var(--card-border);
+    padding: 1rem 1rem 1.3rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.55rem rgba(0, 0, 0, 0.04);
+}
+
+.arrival-card img {
+    border-radius: 0.3rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+}
+
+.arrival-card h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+/* ============ DIGITAL BOOK BANNER (BANNER) ============ */
+/* DIGITAL BOOK BANNER */
+.banner {
+    width: 100%;
+    height: 250px;      
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: left center;  
+}     
+
+.banner_btn {
+position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 22px;
+    background: #089da1;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+/* ============ FOOTER ============ */
+
+.footer {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 3rem 0 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+    gap: 2rem;
+}
+
+.footer-logo {
+    width: 4rem;
+    margin-bottom: 0.7rem;
+}
+
+.footer-col h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #dddddd;
+}
+
+.footer-col a:hover {
+    color: var(--primary);
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.7rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-title {
+    margin-top: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.newsletter input {
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #dddddd;
+}
+
+.footer-copy span {
+    color: var(--primary);
+}
+/* ============ RESPONSIVE ============ */
+/* ============================================
+   RESPONSIVE MASTER FIX
+   Works for iPhone XR – iPad Pro – Nest Hub Max
+   ============================================ */
+
+/* ---------- Nest Hub Max (1280px) ---------- */
+@media (max-width: 1280px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .banner {
+        height: 330px;
+    }
+
+    .banner-img {
+        object-position: 30% center;
+    }
+
+    .arrival-grid,
+    .review-grid,
+    .features,
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ============ RESPONSIVE ============ */
+/* ============================================
+   RESPONSIVE MASTER FIX
+   Works for iPhone XR – iPad Pro – Nest Hub Max
+   ============================================ */
+
+/* ---------- Nest Hub Max (1280px) ---------- */
+@media (max-width: 1280px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .banner {
+        height: 330px;
+    }
+
+    .banner-img {
+        object-position: 30% center;
+    }
+
+    .arrival-grid,
+    .review-grid,
+    .features,
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ---------- Phones 360px ---------- */
+@media (max-width: 360px) {
+
+    .banner {
+        height: 230px;
+    }
+
+    .banner-img {
+        object-position: 50% top;
+    }
+
+    .banner_btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+/* ============ HEADER & NAVBAR ============ */
+
+.header {
+    background: url("image/bg.png") center/cover no-repeat;
+    padding-bottom: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo img {
+    width: 3.2rem;
+}
+
+.logo-main {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo-sub {
+    font-size: 0.85rem;
+    color: var(--light-text);
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    width: 0;
+    height: 0.13rem;
+    background-color: var(--primary);
+    transition: width 0.25s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.dark-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+/* BUTTONS */
+
+.btn {
+    padding: 0.7rem 1.8rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-small {
+    padding: 0.45rem 1.4rem;
+    font-size: 0.9rem;
+}
+/* ============ ABOUT ============ */
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+
+/* PRICES */
+
+.book-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.price-current {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.price-old {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    text-decoration: line-through;
+}
+/* ============ REVIEWS ============ */
+
+.reviews {
+    padding: 3rem 0 1rem;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+    border: 0.07rem solid var(--card-border);
+    padding: 1.2rem 1.2rem 1.4rem;
+    box-shadow: 0 0.1rem 0.55rem rgba(0, 0, 0, 0.04);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-card img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #e0e0e0;
+}
+
+.review-card h3 {
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.review-card p {
+    font-size: 0.92rem;
+    color: var(--light-text);
+    margin-bottom: 0.8rem;
+}
+/* ============ BLOG ============ */
+
+.blog {
+    padding: 3rem 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    border-radius: 0.6rem;
+    border: 0.07rem solid var(--card-border);
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 0.1rem 0.55rem rgba(0, 0, 0, 0.04);
+}
+
+.blog-card img {
+    height: 14rem;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.1rem 1.1rem 1.3rem;
+}
+
+.blog-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+}
+
+.blog-content p {
+    font-size: 0.92rem;
+    color: var(--light-text);
+    margin-bottom: 0.8rem;
+}
+
+.blog-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--primary);
+}
+/* ============ DARK MODE ============ */
+
+body.dark {
+    background-color: #050505;
+    color: #f5f5f5;
+}
+
+body.dark .header {
+    background-color: #101010;
+    background-image: none;
+}
+
+body.dark .feature-box,
+body.dark .book-card,
+body.dark .arrival-card,
+body.dark .review-card,
+body.dark .blog-card,
+body.dark .footer {
+    background-color: #141414;
+    border-color: #333333;
+}
+
+body.dark .price-current {
+    color: #ffffff;
+}
+
+body.dark .footer-copy span {
+    color: var(--primary);
+}
+/* ---------- iPad Pro (1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arrival-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner-img {
+        object-position: 35% center;
+    }
+
+    /* IMPORTANT: Fix footer disappearing */
+    .footer {
+        margin-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+/* ---------- iPhone XR (414px) ---------- */
+@media (max-width: 414px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .hero-image img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .features,
+    .arrival-grid,
+    .review-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        height: 260px;
+    }
+
+    .banner-img {
+        object-fit: cover;
+        object-position: 28% center;
+    }
+
+    .banner_btn {
+        bottom: 14px;
+        left: 14px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
