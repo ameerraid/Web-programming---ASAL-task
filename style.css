@@ -112,3 +112,24 @@
     color: var(--light-text);
 }
 
+/* PRICES */
+
+.book-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.price-current {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.price-old {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    text-decoration: line-through;
+}
