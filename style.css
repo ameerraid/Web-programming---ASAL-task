@@ -256,3 +256,46 @@ body.dark .price-current {
 body.dark .footer-copy span {
     color: var(--primary);
 }
+/* ---------- iPad Pro (1024px) ---------- */
+@media (max-width: 1024px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arrival-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner-img {
+        object-position: 35% center;
+    }
+
+    /* IMPORTANT: Fix footer disappearing */
+    .footer {
+        margin-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
