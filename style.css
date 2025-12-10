@@ -299,3 +299,43 @@ body.dark .footer-copy span {
         padding-bottom: 3rem !important;
     }
 }
+/* ---------- iPhone XR (414px) ---------- */
+@media (max-width: 414px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .hero-image img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .features,
+    .arrival-grid,
+    .review-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        height: 260px;
+    }
+
+    .banner-img {
+        object-fit: cover;
+        object-position: 28% center;
+    }
+
+    .banner_btn {
+        bottom: 14px;
+        left: 14px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
