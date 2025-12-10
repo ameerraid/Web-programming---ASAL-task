@@ -227,3 +227,32 @@
     font-size: 1rem;
     color: var(--primary);
 }
+/* ============ DARK MODE ============ */
+
+body.dark {
+    background-color: #050505;
+    color: #f5f5f5;
+}
+
+body.dark .header {
+    background-color: #101010;
+    background-image: none;
+}
+
+body.dark .feature-box,
+body.dark .book-card,
+body.dark .arrival-card,
+body.dark .review-card,
+body.dark .blog-card,
+body.dark .footer {
+    background-color: #141414;
+    border-color: #333333;
+}
+
+body.dark .price-current {
+    color: #ffffff;
+}
+
+body.dark .footer-copy span {
+    color: var(--primary);
+}
