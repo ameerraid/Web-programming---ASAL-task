@@ -372,3 +372,20 @@ position: absolute;
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* ---------- Phones 360px ---------- */
+@media (max-width: 360px) {
+
+    .banner {
+        height: 230px;
+    }
+
+    .banner-img {
+        object-position: 50% top;
+    }
+
+    .banner_btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}
+
