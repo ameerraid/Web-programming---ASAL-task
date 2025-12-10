@@ -133,3 +133,51 @@
     color: var(--light-text);
     text-decoration: line-through;
 }
+/* ============ REVIEWS ============ */
+
+.reviews {
+    padding: 3rem 0 1rem;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 0.6rem;
+    border: 0.07rem solid var(--card-border);
+    padding: 1.2rem 1.2rem 1.4rem;
+    box-shadow: 0 0.1rem 0.55rem rgba(0, 0, 0, 0.04);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-card img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #e0e0e0;
+}
+
+.review-card h3 {
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.review-card p {
+    font-size: 0.92rem;
+    color: var(--light-text);
+    margin-bottom: 0.8rem;
+}
